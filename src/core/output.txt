@@ -1,0 +1,45 @@
+PS C:\Users\NUHAN_CYBER\Desktop\JARVIS 2.0> python -m src.core.main
+C:\Users\NUHAN_CYBER\Desktop\JARVIS 2.0\src\nlp\processor.py:164: SyntaxWarning: invalid escape sequence '\P'
+  - User: "what is my cpu usage" -> `{"commands": "(Get-Counter '\Processor(_Total)\% Processor Time').CounterSamples.Value", "output_type": "answer"}`
+Initializing Jarvis Core...
+Initializing sub-modules...
+Session Manager initialized. Context file: C:\Users\NUHAN_~1\AppData\Local\Temp\jarvis_sessions\session_NUHAN_CYBER.jsonl
+Loaded 4 messages from context file.
+Initializing NLP Processor (The Core Thinker)...
+Groq API configured for NLP processing with model: llama3-8b-8192.
+Initializing Reminder Manager. Reminders will be saved to: C:\Users\NUHAN_CYBER\Desktop\JARVIS 2.0\data\user_data\reminders.json
+Initializing Task Executor...
+Sub-modules initialized.
+Jarvis initialized for user: NUHAN_CYBER
+Calibrating microphone... Please be quiet.
+Microphone calibrated. Jarvis is ready.
+Hotkey listener started (Press F3 to toggle input mode).
+Jarvis speaking: 'Jarvis is online and ready. All systems nominal. How may I assist you, sir?'
+
+[VOICE MODE] Listening...
+Listening for your command...
+Processing audio...
+
+Jarvis received command: 'jarvis convert your language to bangla'
+Saved 5 messages to context file.
+Appended to context: user: jarvis convert your language to bangla...
+Creating Action Plan for prompt: 'jarvis convert your language to bangla'
+Executing Action: 'set_language' with Entities: {'language_code': 'bn'}
+Jarvis speaking: 'আমি এখন বাংলায় কথা বলব।'
+Error executing engine function for provider_1.tts: 1 validation error for SpeechCreateRequest
+voice
+  Input should be 'alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer', 'ash', 'coral' or 'sage' [type=literal_error, input_value='bn-BD-Standard-A', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+Traceback (most recent call last):
+  File "C:\Users\NUHAN_CYBER\Desktop\JARVIS 2.0\src\tts\a4f_local\client.py", line 69, in create
+    request_data = SpeechCreateRequest(model=model, input=input, voice=voice, **kwargs)
+  File "C:\Users\NUHAN_CYBER\AppData\Roaming\Python\Python313\site-packages\pydantic\main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for SpeechCreateRequest
+voice
+  Input should be 'alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer', 'ash', 'coral' or 'sage' [type=literal_error, input_value='bn-BD-Standard-A', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error
+An error occurred during speech synthesis: 1 validation error for SpeechCreateRequest
+voice
+  Input should be 'alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer', 'ash', 'coral' or 'sage' [type=literal_error, input_value='bn-BD-Standard-A', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/literal_error

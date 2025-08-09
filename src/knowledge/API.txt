@@ -1,0 +1,6 @@
+OPEN_WEATHER_API_KEY: d686d4a6c06e80756c79a27dc566f4f7
+nasa api org : b05d9096053f46329f0d256f77f1dddb
+gemini api key : AIzaSyCekw0uNXqx-4etAhabFzOHP-kOl1GCEno(2.0 flash)
+GROQ API KEY : YOUR_GROQ_API_KEY
+email: mdsydurrahmansaeed@gmail.com
+2s.v.k:ozxt vtpd ilbo kxuf

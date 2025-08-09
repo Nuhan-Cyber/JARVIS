@@ -1,0 +1,16 @@
+# jarvis-ai/requirements.txt
+
+# Core dependencies (will add more as features are built)
+# For basic interaction and environment setup
+SpeechRecognition
+requests # For general API integration (though elevenlabs client handles its own)
+pyaudio # Required for SpeechRecognition to access microphone (install manually if issues: pip install pyaudio)
+pydub # For audio manipulation (e.g., loading from stream)
+simpleaudio # For playing audio directly (used by pydub.playback.play)
+elevenlabs # Official ElevenLabs Python client library
+groq # For Groq API integration
+python-dotenv # For loading environment variables from .env file
+SQLAlchemy # For ORM with SQLite
+APScheduler # For scheduling background reminder checks
+cambai
+python-dateutil
